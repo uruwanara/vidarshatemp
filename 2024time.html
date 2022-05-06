@@ -2,45 +2,127 @@
 <html lang="en">
 
 <head>
-<style>
-.center { 
-  height: 200px;
-  position: relative;
-}
-
-.center  h3{
-  margin: 0;
-  margin-top:20px;
-  color: green;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-</style>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="ScoopThemes">
+    <meta name="ROBOTS" content="Bootstrap 3 Themes, Responsive Themes, Bootstrap 3 Responsive, Wordpress Themes, Clean Themes, Modern Themes, Flat Themes, Flat UI, UI Design, UX Design, Web design, responsive bootstrap, Jquery Plugins, Free Plugins, Premium Bootstrap themes, Bootstrap 3, Premium Web Templates, Bootstrap Templates, Bootstrap Responsive Templates, Admin, Dashboard, Admin Templates, Admin Responsive, Admin responsive themes">
+    <meta name="description" content="Solutions For Web Developers Form ( Web Templates, Web Themes, Jquery Plugins, UX Design.. ) Whatever They Need.">
+    <meta name="abstract" content="Solutions For Web Developers Form ( Web Templates, Web Themes, Jquery Plugins, UX Design.. ) Whatever They Need.">
+   
+    <meta name="author" content="www.scoopthemes.com">
+    <meta name="publisher" content="www.scoopthemes.com">
+    <meta name="copyright" content="www.scoopthemes.com">
+    <meta name="revisit-after" content="2 days">
     <title>Vidarsha Institute 2024 Time Table</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ico.png">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <!-- Bootstrap -->
+    <link href="asets/css/bootstrap.css" rel="stylesheet">
+    <link href="asets/css/font-awesome.css" rel="stylesheet">
+    <link href="asets/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="asets/css/animations.css">
 
-    <link rel="stylesheet" href="assets/css/vidarshaIT.css">
+    <!-- siimple style -->
+    <link href="asets/css/style.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>    
-<div class="center">
-  <h3>2024 A/L</h3>
-  <h3>Time Table</h3>
-  </div>
-  <div class="center">
-  <img src="assets/images/db0400868e5aac451726ad8bb0f9a8f2.gif">
-  </div>
+<body>
+
+    <div class="cloud floating">
+        <img src="asets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="cloud pos1 fliped floating">
+        <img src="asets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="cloud pos2 floating">
+        <img src="asets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="cloud pos3 fliped floating">
+        <img src="asets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+
+    <div id="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h1>2024 A/L Time Table</h1>
+                    <br/>
+                    <h2 class="subtitle">We're working on this site and we'll be ready very soon</h2>
+                    <br/>
+                             </div>
+                <div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle">
+                        <li><a href="https://www.facebook.com/vidarshaedu/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p class="copyright">Copyright Vidarsha IT Section @2022 - <a href="http://vidarsha.lk">Vidarsha.LK</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
+    <script>
+        
+$(document).ready( function () {
+    $('#wrapper').height($(document).height());
+    // I only have one form on the page but you can be more specific if need be.
+    var $form = $('form');
+
+    if ( $form.length > 0 ) {
+        $('form input[type="submit"]').bind('click', function ( event ) {
+            if ( event ) event.preventDefault();
+            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+            if ( $form.validate() ) { register($form); }
+        });
+    }
+});
+
+function appendResult(userText , className, iconClass){
+  var resultHTML = "<div class='stretchLeft result "+ className + "'>" + userText + " <span class='fa fa-" + iconClass + "'></span>" + "</div>";
+  $('body').append(resultHTML);
+  $('.result').delay(10000).fadeOut('1000');
+}
+
+
+function register($form) {
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+        success     : function(data) {
+            if (data.result != "success") {
+                appendResult('Wrong Email Or You Are Already Registered, Try Again', 'error', 'exclamation');
+            } else {
+                // It worked, carry on...
+                appendResult('Successful, Check Your Email For Confirmation ', 'success', 'check');
+            }
+        }
+    });
+}
+    </script>
+
 </body>
 
 </html>

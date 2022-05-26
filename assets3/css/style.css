@@ -8,7 +8,7 @@
 -----------------------------------------------------------------------------------
 
     CSS INDEX
-    ===================
+    ===================z
 
     01. Theme default CSS
 	02. Header
@@ -60,6 +60,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: larger;
   color: #121212;
   margin: 0px; }
 

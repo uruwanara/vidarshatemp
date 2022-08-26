@@ -1757,7 +1757,28 @@ section {
   height: 350px;
   text-align: center;
 }
+@media screen and (min-width: 601px) {
+.cta-content1 h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffffff;;
+  letter-spacing: 1px;
+}
 
+.cta-content1 h2 em {
+  font-style: normal;
+  color: #8cc900;
+}
+
+.cta-content1 p {
+  font-size: 16px;
+  color: #232d39;;
+  margin: 15px 0px 25px 0px;
+}
+}
+
+@media screen and (max-width: 601px) {
 .cta-content1 h2 {
   font-size: 24px;
   text-transform: uppercase;
@@ -1775,4 +1796,5 @@ section {
   font-size: 16px;
   color: #232d39;;
   margin: 15px 0px 25px 0px;
+}
 }

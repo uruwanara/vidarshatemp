@@ -1253,7 +1253,7 @@ section {
   overflow: hidden;
   border: 1px solid #fff;
 }
-
+@media screen and (min-width: 601px) {
 .pricing .box h3 {
   font-weight: 400;
   padding: 15px;
@@ -1261,6 +1261,17 @@ section {
   font-size: 10px;
   font-weight: 600;
   color: #151515;
+}
+}
+@media screen and (max-width: 601px) {
+.pricing .box h3 {
+  font-weight: 400;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 8px;
+  font-weight: 600;
+  color: #151515;
+}
 }
 
 .pricing .box h4 {

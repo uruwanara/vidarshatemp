@@ -271,7 +271,8 @@
               <h4>බදාදා ප.ව. 1.30</h4>
               <ul>
                 <li style="color"><i class="bx bx-check-double" ></i>මිනුම් උපකරණ</li>
-                <li><i class="bx bx-check-double" ></i>යාන්ත්‍ර විද්‍යාව</li>
+                <!-- <li><i class="bx bx-check-double" id="name"></i>යාන්ත්‍ර විද්‍යාව</li> -->
+                <li><i class="bx bx-check-double" id="name"></i></li>
                 <li>පාඩම් ආරම්භ කර ඇත</li>
               </ul>
             </div>
@@ -663,16 +664,42 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-\
+
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-
   <script src="assets/js/main.js"></script>
+  <script>
+		let allNamesElm = document.getElementById("allNames")
+		let loaderElm = document.getElementById("loader")
+		let errorMessageElm = document.getElementById("errorMessage")
+		
+		function setErrorDisplay(){
+			loaderElm.style.display = "none"
+			allNamesElm.style.display = "none"
+			errorMessageElm.style.display = "block"
+		}
+			
+		fetch("https://api.apispreadsheets.com/data/AONz0PiNinYUEGWw/").then(res=>{
+			if (res.status === 200){
+				res.json().then(data=>{
+					const yourData = data["data"]
+                    document.getElementById("name").innerText=yourData[0].name;
+
+				}).catch(err => {
+					setErrorDisplay()
+				})
+			}
+			else{
+				setErrorDisplay()
+			}
+		}).catch(err =>{
+			setErrorDisplay()
+		})
+	</script>
 
 </body>
 

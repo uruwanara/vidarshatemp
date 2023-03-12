@@ -139,11 +139,19 @@ img {
   padding-bottom: 100px;
 }
 
-#home h1,
-#home h3 {
+#home h1{
+  padding: auto;
   line-height: 50px;
   font-size: 40px;
   text-shadow: 2px 4px 4px #000000;
+  color:#ffffff;
+}
+#home h3 {
+  padding: auto;
+  line-height: 50px;
+  font-size: 40px;
+  text-shadow: 2px 4px 4px #000000;
+  color:#83d183;
 }
 
 /* divider section */

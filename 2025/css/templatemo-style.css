@@ -142,7 +142,7 @@ img {
 #home h1{
   padding: auto;
   line-height: 50px;
-  font-size: 40px;
+  font-size: 38px;
   text-shadow: 2px 4px 20px #000000,2px 0.5px 2px #000000;
   color:#ffffff;
 }
@@ -151,7 +151,7 @@ img {
   line-height: 50px;
   font-size: 45px;
   text-shadow: 4px 4px 20px #000000,2px 1px 2px #000000;
-  color:#faffe7;
+  color:#f0f0f0;
 }
 
 /* divider section */

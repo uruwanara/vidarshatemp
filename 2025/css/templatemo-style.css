@@ -433,24 +433,26 @@ footer a:hover {
 
 .slider{
   position: relative;
-  background: #000116;
+  background: #006915;
   width: 800px;
   min-height: 500px;
-  margin: 20px;
   overflow: hidden;
   border-radius: 10px;
+  margin-left: 120px;
 }
 
 .slider .slide{
   position: absolute;
+  align-items: center;
   width: 100%;
   height: 100%;
   clip-path: circle(0% at 0 50%);
+  vertical-align: middle;
 }
 
 .slider .slide.active{
   clip-path: circle(150% at 0 50%);
-  transition: 2s;
+  transition: 0.001s;
 }
 
 .slider .slide img{
@@ -511,7 +513,7 @@ footer a:hover {
 
 .navigation-visibility .slide-icon{
   z-index: 999;
-  background: rgba(247, 0, 0, 0.5);
+  background: rgba(0, 247, 99, 0.5);
   width: 20px;
   height: 10px;
   transform: translateY(-50px);
@@ -521,12 +523,14 @@ footer a:hover {
 }
 
 .navigation-visibility .slide-icon.active{
-  background: #4285F4;
+  background: #ffffff;
 }
 
 @media (max-width: 900px){
   .slider{
     width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
   .slider .slide .info{

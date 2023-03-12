@@ -133,15 +133,17 @@ img {
 #home {
   background: url('../images/home-bg.jpg') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   min-height: 500px;
   padding-top: 180px;
   padding-bottom: 100px;
 }
+
 #home h1,
 #home h3 {
   line-height: 30px;
   font-size: 40px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 /* divider section */

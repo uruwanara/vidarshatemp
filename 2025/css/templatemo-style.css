@@ -143,15 +143,15 @@ img {
   padding: auto;
   line-height: 50px;
   font-size: 40px;
-  text-shadow: 2px 4px 4px #000000;
+  text-shadow: 2px 4px 20px #000000,2px 0.5px 2px #000000;
   color:#ffffff;
 }
 #home h3 {
   padding: auto;
   line-height: 50px;
-  font-size: 40px;
-  text-shadow: 2px 4px 4px #000000;
-  color:#83d183;
+  font-size: 45px;
+  text-shadow: 4px 4px 20px #000000,2px 1px 2px #000000;
+  color:#faffe7;
 }
 
 /* divider section */

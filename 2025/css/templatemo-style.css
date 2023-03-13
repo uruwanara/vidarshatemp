@@ -8,7 +8,7 @@ http://www.templatemo.com/tm-468-onetel
 
 body
 	{
-		background: #101010;
+		background: #212121;
     color: #808080;
 		font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -283,10 +283,10 @@ img {
 #portfolio img {
   width: 100%;
   transition: all 0.4s ease-in;
-  opacity: 0.8;
+  opacity: 1;
 }
 #portfolio img:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 #portfolio .btn {
   margin-top: 30px;

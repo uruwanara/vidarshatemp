@@ -271,6 +271,10 @@ img {
 #portfolio h2 {
   padding-bottom: 10px;
 }
+#portfolio p {
+  font-size: 18px;
+  font-weight: 1000;
+}
 #portfolio .col-md-4,
 #portfolio .col-md-3 {
   padding: 0;
@@ -381,9 +385,13 @@ footer a:hover {
 /* copyright section */
 .copyright {
 	margin: 10px 0px;
+
 }
 .copyright p {
   padding-top: 20px;
+  font-weight: 100;
+  font-size: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .social-icons {
   padding: 0px;
@@ -398,7 +406,7 @@ footer a:hover {
 .social-icons li a {
   color: #909090;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 15px;
   text-align: center;
   transition: all 0.4s ease-in;
@@ -452,7 +460,7 @@ footer a:hover {
 
 .slider .slide.active{
   clip-path: circle(150% at 0 50%);
-  transition: 0.001s;
+  transition: 0;
 }
 
 .slider .slide img{
@@ -551,4 +559,83 @@ footer a:hover {
     font-size: 0.9em;
   }
 }
-      
+
+.team {
+  background: #101010;
+  padding: 60px 0;
+}
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: bottom ease-in-out 0.4s;
+  background: rgba(124, 197, 118, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .member .social a i {
+  line-height: 0;
+}
+
+.team .member .social a:hover {
+  color: #fff;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+  font-size: 18px;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #7cc576;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888888;
+}
+
+.team .member:hover .social {
+  bottom: 0;
+  opacity: 1;
+  transition: bottom ease-in-out 0.4s;
+}

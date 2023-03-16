@@ -10,7 +10,7 @@ body
 	{
 		background: #111111;
     color: #808080;
-		font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 	}
 
@@ -42,6 +42,7 @@ body
 h1,h2,h3,h4 {
   color: #fff;
   font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1,h2 {
@@ -271,6 +272,9 @@ img {
 #portfolio h2 {
   padding-bottom: 10px;
   color: #c5c6b3;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  animation: myAnim 2s ease 0s infinite alternate-reverse forwards;
 }
 #portfolio p {
   font-size: 18px;
@@ -639,4 +643,18 @@ footer a:hover {
   bottom: 0;
   opacity: 1;
   transition: bottom ease-in-out 0.4s;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }

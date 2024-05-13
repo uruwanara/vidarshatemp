@@ -8,7 +8,7 @@ http://www.templatemo.com/tm-468-onetel
 
 body
 	{
-		background: #111111;
+		background: #eeede3;
     color: #808080;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -40,7 +40,7 @@ body
 
 /* heading section */
 h1,h2,h3,h4 {
-  color: #fff;
+  color: #025179;
   font-weight: bold;
   font-family: 'Work Sans', sans-serif;
 }
@@ -58,10 +58,10 @@ img {
 /* button section */
 .btn {
   background: transparent;
-  border: 2px solid #fff;
-  border-radius: 0px;
+  border: 2px solid #009988;
+  border-radius: 10px;
   box-shadow: none;
-  color: #fff;
+  color: #009988;;
   padding: 12px 18px;
   font-size: 13px;
   font-weight: bold;
@@ -132,14 +132,34 @@ img {
 
 /* home section */
 #home {
-  background: url('../images/home-bg.jpg') no-repeat;
+  background: url('../images/home-bg1.jpg') no-repeat;
   background-size: cover;
-  background-position: top center;
-  min-height: 500px;
-  padding-top: 180px;
-  padding-bottom: 100px;
+  background-position: right center;
+  min-height: 700px;
 }
-
+/* For width 400px and larger: */
+@media only screen and (min-width: 600px) {
+  #home {   background: url('../images/home-bg1.jpg') no-repeat;
+    background-size: contain;
+    background-position: center top;
+    min-height: 700px;
+  }
+}
+/* home section */
+#home1 {
+  background: url('../images/home-bg2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 300px;
+}
+/* For width 400px and larger: */
+@media only screen and (min-width: 600px) {
+  #home1 {   background: url('../images/home-bg2.jpg') no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 600px;
+  }
+}
 #home h1{
   padding: auto;
   line-height: 50px;
@@ -183,13 +203,16 @@ img {
   cursor: pointer;
 }
 .divider .divider-one {
-  background: #c14000;
-}
-.divider .divider-two {
+  border-radius: 25px;
   background: #009988;
 }
+.divider .divider-two {
+  border-radius: 25px;
+  background: #64266d;
+}
 .divider .divider-three {
-  background: #ffa500;
+  border-radius: 25px;
+  background: #009988;
 }
 
 /* about section */
@@ -271,10 +294,18 @@ img {
   }
 #portfolio h2 {
   padding-bottom: 10px;
-  color: #c5c6b3;
+  color: #009988;
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
   animation: myAnim 2s ease 0s infinite alternate-reverse forwards;
+}
+#portfolio h3 {
+  padding: auto;
+
+  border-radius: 25px;
+  border: 2px solid #ad219a;
+  border-top:  #026e24;
+  border-bottom:  #026e24;
 }
 #portfolio p {
   font-size: 18px;
@@ -502,7 +533,7 @@ footer a:hover {
 .prev-btn, .next-btn{
   z-index: 999;
   font-size: 2em;
-  color: #222;
+  color: #009988;
   background: rgba(255, 255, 255, 0.8);
   padding: 10px;
   cursor: pointer;
@@ -651,7 +682,7 @@ footer a:hover {
 	}
 
 	50% {
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	100% {

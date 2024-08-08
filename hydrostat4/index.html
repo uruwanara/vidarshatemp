@@ -1,1 +1,95 @@
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Status</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #a8e063, #56ab2f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
 
+        .message {
+            position: relative;
+            font-size: 2em;
+            padding: 20px;
+            border: 3px dashed #fff;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            animation: magicGlow 1.5s infinite alternate;
+        }
+
+        .highlight {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff700;
+        }
+
+        @keyframes magicGlow {
+            from {
+                box-shadow: 0 0 20px #fff700, 0 0 40px #fff700, 0 0 60px #fff700, 0 0 80px #fff700;
+            }
+            to {
+                box-shadow: 0 0 20px #fff700, 0 0 40px #fff700, 0 0 60px #00ffea, 0 0 80px #00ffea;
+            }
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .stars div {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff700, 0 0 40px #fff700;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+        }
+
+        .stars div:nth-child(odd) {
+            animation-duration: 3s;
+        }
+
+        .stars div:nth-child(even) {
+            animation-duration: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <span class="highlight">Hi 2024,</span><br>
+        your video is not ready yet
+    </div>
+    <div class="stars">
+        <div style="top: 10%; left: 20%;"></div>
+        <div style="top: 30%; left: 80%;"></div>
+        <div style="top: 50%; left: 50%;"></div>
+        <div style="top: 70%; left: 10%;"></div>
+        <div style="top: 90%; left: 90%;"></div>
+        <div style="top: 15%; left: 70%;"></div>
+        <div style="top: 60%; left: 30%;"></div>
+        <div style="top: 85%; left: 40%;"></div>
+    </div>
+</body>
+</html>
